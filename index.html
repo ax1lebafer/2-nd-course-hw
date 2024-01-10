@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>funtime game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header class="header center">
+        <h1 class="header__heading">Добро пожаловать</br>на мой сайт!</h1>
+        <p class="header__text">Вам предстоит пройти несколько увлекательных</br> игр. Если готов нажимай <span class="header__text-bold">поехали</span> и <span class="header__text-bold">приступай</span></p>
+        <button class="header__button">Поехали!</button>
+    </header>
+    <section class="game center">
+        <div class="game__content">
+            <article class="game__card">
+                <a class="game__link" href="#">
+                    <img class="game__image" src="./img/game-1.jpg" alt="game-1">
+                </a>
+                <a class="game__name" href="#">Игра 1</a>
+            </article>
+            <article class="game__card">
+                <a class="game__link" href="#">
+                    <img class="game__image" src="./img/game-2.jpg" alt="game-2">
+                </a>
+                <a class="game__name" href="#">Игра 2</a>
+            </article>
+            <article class="game__card">
+                <a class="game__link" href="#">
+                    <img class="game__image" src="./img/game-3.jpg" alt="game-3">
+                </a>
+                <a class="game__name" href="#">Игра 3</a>
+            </article>
+        </div>
+    </section>
 </body>
+
 </html>
