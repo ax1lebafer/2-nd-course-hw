@@ -161,6 +161,7 @@ input, button, select {
     flex-direction: column;
     align-items: center;
     height: 735px;
+    background-position: 31%;
   }
   .header__heading {
     font-size: 32px;
@@ -175,6 +176,9 @@ input, button, select {
   }
   .game {
     height: 1221px;
+  }
+  .game__content {
+    justify-content: center;
   }
   .game__card {
     width: 343px;
@@ -197,6 +201,51 @@ input, button, select {
   }
   .game__picture {
     width: 344px;
+  }
+  .game-one {
+    height: 653px;
+    justify-content: center;
+  }
+}
+@media (max-width: 344px) {
+  .header {
+    height: 650px;
+    background-position: 32%;
+  }
+  .header__heading {
+    font-size: 28px;
+    width: 320px;
+    text-align: center;
+    padding-top: 180px;
+  }
+  .header__text {
+    width: 300px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .header__button {
+    font-size: 16px;
+  }
+  .game {
+    height: 900px;
+  }
+  .game__heading {
+    font-size: 28px;
+  }
+  .game__text {
+    font-size: 12px;
+    line-height: 20px;
+    width: 300px;
+  }
+  .game__card {
+    width: 300px;
+    height: 250px;
+  }
+  .game__button {
+    font-size: 16px;
+  }
+  .game__picture {
+    width: 300px;
   }
   .game-one {
     height: 653px;

@@ -9,6 +9,7 @@
         flex-direction: column;
         align-items: center;
         height: 735px;
+        background-position: 31%;
 
         &__heading {
             font-size: 32px;
@@ -26,6 +27,10 @@
 
     .game {
         height: 1221px;
+
+        &__content {
+            justify-content: center;
+        }
 
         &__card {
             width: 343px;
@@ -53,6 +58,62 @@
 
         &__picture {
             width: 344px;
+        }
+
+        &-one {
+            height: 653px;
+            justify-content: center;
+        }
+    }
+}
+
+@media (max-width: 344px) {
+    .header {
+        height: 650px;
+        background-position: 32%;
+
+        &__heading {
+            font-size: 28px;
+            width: 320px;
+            text-align: center;
+            padding-top: 180px;
+        }
+
+        &__text {
+            width: 300px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        &__button {
+            font-size: 16px;
+        }
+    }
+
+    .game {
+        height: 900px;
+
+        &__heading {
+            font-size: 28px;
+        }
+
+        &__text {
+            font-size: 12px;
+            line-height: 20px;
+            width: 300px;
+        }
+
+        &__card {
+            width: 300px;
+            height: 250px;
+        }
+
+        &__button {
+            font-size: 16px;
+        }
+
+        &__picture {
+            width: 300px;
         }
 
         &-one {
