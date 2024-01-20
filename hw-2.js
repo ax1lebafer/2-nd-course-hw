@@ -14,8 +14,8 @@ let creatorNameJS = 'Брендан Эйх';
 alert(creatorNameJS);
 
 // Задание 4
-let firstNumber = 10
-twoNumber = 2;
+let firstNumber = 10;
+let twoNumber = 2;
 
 alert(firstNumber + twoNumber);
 alert(firstNumber - twoNumber);
