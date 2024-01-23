@@ -201,6 +201,7 @@ input, button, select {
   }
   .game__picture {
     width: 344px;
+    order: 1;
   }
   .game-one {
     height: 653px;
@@ -246,6 +247,7 @@ input, button, select {
   }
   .game__picture {
     width: 300px;
+    order: 1;
   }
   .game-one {
     height: 653px;
