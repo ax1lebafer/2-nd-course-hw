@@ -1,27 +1,24 @@
 // Задание 1
-let numberOne = 6;
-let numberTwo = 16;
-
-function returnLowerNumber() {
+function returnLowerNumber(numberOne, numberTwo) {
     if (numberOne <= numberTwo) {
-        console.log(numberOne);
+        return numberOne;
     } else {
-        console.log(numberTwo);
+        return numberTwo;
     }
 }
 
-returnLowerNumber();
+console.log(returnLowerNumber());
 
 // Задание 2
-function evenNumber() {
+function evenNumber(numberOne) {
     if (numberOne % 2 === 0) {
-        console.log(`Число четное`);
+        return 'Число четное';
     } else {
-        console.log(`Число нечетное`);
+        return 'Число нечетное';
     }
 }
 
-evenNumber();
+console.log(evenNumber(234));
 
 // Задание 3.1
 function findingNumberSquare(myNumber = 4) {
@@ -38,9 +35,9 @@ function findingNumberSquare2(myNumber = 4) {
 console.log(findingNumberSquare2(12));
 
 // Задание 4
-let howManyYears = prompt('Сколько тебе лет?');
-
 function sayHello() {
+    let howManyYears = prompt('Сколько тебе лет?');
+
     if (howManyYears < 0 || isNaN(howManyYears)) {
         alert(`Вы ввели неправильное значение`);
     } else if (howManyYears >= 0 && howManyYears <= 12) {
@@ -53,24 +50,24 @@ function sayHello() {
 sayHello();
 
 // Задание 5
-function multiplyingNumbers() {
+function multiplyingNumbers(numberOne, numberTwo) {
     if (isNaN(numberOne) || isNaN(numberTwo)) {
         return `Одно или оба значения не являются числом`;
     } else {
-        return `Произведение 2-х чисел равно: ` + numberOne * numberTwo;
+        return numberOne * numberTwo;
     }
 }
 
-console.log(multiplyingNumbers());
+console.log(multiplyingNumbers(6, 4));
 
 // Задание 6
-let numberThree = prompt(`Введите число`);
-
 function raisingNumber() {
+    let numberThree = prompt(`Введите число`);
+
     if (isNaN(numberThree)) {
         return `Переданный параметр не является числом`;
     } else {
-        return numberThree + ` в кубе равняется ` + numberThree ** 3;
+        return numberThree + ' в кубе равняется ' + numberThree ** 3;
     }
 }
 
@@ -78,11 +75,11 @@ console.log(raisingNumber());
 
 // Задание 7
 function getCircleArea() {
-    return `Площадь круга составляет ` + Math.round(Math.PI * this.radius ** 2) + ` кв. мм`;
+    return Math.round(Math.PI * this.radius ** 2);
 }
 
 function getCirclePerimeter() {
-    return `Периметр круга составляет ` + Math.round(2 * Math.PI * this.radius) + ` мм`;
+    return Math.round(2 * Math.PI * this.radius);
 }
 
 const circle1 = {
@@ -97,7 +94,7 @@ const circle2 = {
     getPerimeter: getCirclePerimeter
 }
 
-console.log(circle1.getArea());
-console.log(circle1.getPerimeter());
-console.log(circle2.getArea());
-console.log(circle2.getPerimeter());
+console.log('Площадь первого круга составляет ' + circle1.getArea() + ' кв. мм');
+console.log('Периметр первого круга составляет ' + circle1.getArea() + ' мм');
+console.log('Площадь второго круга составляет ' + circle2.getArea() + ' кв. мм');
+console.log('Периметр второго круга составляет ' + circle2.getArea() + ' мм');
