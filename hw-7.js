@@ -77,7 +77,8 @@ const months = ["Января", "Февраля", "Марта", "Апреля", 
 function formatedDate(currentDate) {
     let fullDate = currentDate.getDate() + ' ' + months[currentDate.getMonth()].toLowerCase() + ' ' + currentDate.getFullYear() + ' -  это ' + days[currentDate.getDay()].toLowerCase();
     let fullTime = currentDate.getHours()+ ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds();
-    return fullDate, fullTime;
+    let dateResult = `${fullDate}\n${fullTime}`;
+    return dateResult;
 }
 
 console.log(formatedDate(date));
